@@ -20,6 +20,8 @@ header .container {
   background-color: yellow;
   width: 60%;
   height: 100%;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 header .container .left_header {
@@ -38,5 +40,19 @@ header .container .left_header img {
 header .container .left_header h2 {
   font-size: 20px;
   color: brown;
+}
+
+header .container .right_header {
+  background-color: blue;
+  width: 50%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+header .container .right_header ul {
+  display: flex;
+  list-style: none;
 }
 
