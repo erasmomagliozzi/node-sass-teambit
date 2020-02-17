@@ -1,0 +1,26 @@
+header{
+  background-color: red;
+  height: 80px;
+  @include flexJustAround;
+  .container{
+    background-color: yellow;
+    width: 60%;
+    height: 100%;
+
+    .left_header{
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      background-color: white;
+      width: 50%;
+      height: 100%;
+       img{
+         width: 40px;
+       }
+       h2{
+         font-size: 20px;
+         color: brown;
+       }
+    }
+  }
+}
