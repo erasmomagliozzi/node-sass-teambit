@@ -2,3 +2,14 @@
   display: flex;
   justify-content: space-around;
 }
+@mixin button {
+  border: 1px solid #233569;
+  border-radius: 7px;
+  font-size: 10px;
+  text-decoration: none;
+
+}
+@mixin img_button{
+  width: 15px;
+  margin-right: 2px;
+}

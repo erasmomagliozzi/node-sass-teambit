@@ -1,33 +1,28 @@
 header{
-  background-color: red;
   height: 80px;
   @include flexJustAround;
-  .container{
-    background-color: yellow;
+  .container_top_header{
     width: 60%;
     height: 100%;
     display: flex;
-    flex-wrap: wrap;
+    border-bottom: 1px solid lightgrey;
 // LEFT HEADER
     .left_header{
       display: flex;
       justify-content: flex-start;
       align-items: center;
-      background-color: white;
-      width: 50%;
+      width: 30%;
       height: 100%;
        img{
          width: 40px;
        }
        h2{
-         font-size: 20px;
-         color: brown;
+         color: #58402C;
        }
     }
 // RIGHT HEADER
     .right_header{
-      background-color: blue;
-      width: 50%;
+      width: 70%;
       height: 100%;
       display: flex;
       align-items:center;
@@ -35,7 +30,70 @@ header{
       ul{
         display: flex;
         list-style:none;
+        font-size: 13px;
       }
+      li{
+        margin: 10px;
+        padding: 6px;
+        font-size: 10px;
+      }
+      img{
+        @include img_button;
+      }
+      a{
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+      }
+      .button{
+        @include button;
+
+      }
+    }
   }
- }
+}
+.main{
+  width: 60%;
+  height: 300px;
+  margin: auto;
+  display: flex;
+  .left_main{
+    padding: 20px;
+    width: 45%;
+    height: $height_100;
+    h1{
+      color:#58402C;
+      line-height: 50px;
+    }
+    h2{
+      color:#58402C;
+      margin: 20px 0;
+    }
+    .sign_up{
+      display: flex;
+      flex-wrap: wrap;
+    }
+    a{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      @include button;
+      border: 0;
+      padding: 6px;
+      width: 40%;
+      margin-right: 20px;
+      background-color: #233569;
+      color: white;
+      img{
+        @include img_button;
+      }
+    }
+  }
+  .right_main{
+    width: 55%;
+    height: $height_100;
+    img{
+      width: 100%;
+    }
+  }
 }

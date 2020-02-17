@@ -9,50 +9,136 @@ body {
   font-size: 25px;
 }
 
+h1 {
+  font-size: 30px;
+}
+
+h2 {
+  font-size: 15px;
+}
+
 header {
-  background-color: red;
   height: 80px;
   display: flex;
   justify-content: space-around;
 }
 
-header .container {
-  background-color: yellow;
+header .container_top_header {
   width: 60%;
   height: 100%;
   display: flex;
-  flex-wrap: wrap;
+  border-bottom: 1px solid lightgrey;
 }
 
-header .container .left_header {
+header .container_top_header .left_header {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  background-color: white;
-  width: 50%;
+  width: 30%;
   height: 100%;
 }
 
-header .container .left_header img {
+header .container_top_header .left_header img {
   width: 40px;
 }
 
-header .container .left_header h2 {
-  font-size: 20px;
-  color: brown;
+header .container_top_header .left_header h2 {
+  color: #58402C;
 }
 
-header .container .right_header {
-  background-color: blue;
-  width: 50%;
+header .container_top_header .right_header {
+  width: 70%;
   height: 100%;
   display: flex;
   align-items: center;
   justify-content: flex-end;
 }
 
-header .container .right_header ul {
+header .container_top_header .right_header ul {
   display: flex;
   list-style: none;
+  font-size: 13px;
+}
+
+header .container_top_header .right_header li {
+  margin: 10px;
+  padding: 6px;
+  font-size: 10px;
+}
+
+header .container_top_header .right_header img {
+  width: 15px;
+  margin-right: 2px;
+}
+
+header .container_top_header .right_header a {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+
+header .container_top_header .right_header .button {
+  border: 1px solid #233569;
+  border-radius: 7px;
+  font-size: 10px;
+  text-decoration: none;
+}
+
+.main {
+  width: 60%;
+  height: 300px;
+  margin: auto;
+  display: flex;
+}
+
+.main .left_main {
+  padding: 20px;
+  width: 45%;
+  height: 100%;
+}
+
+.main .left_main h1 {
+  color: #58402C;
+  line-height: 50px;
+}
+
+.main .left_main h2 {
+  color: #58402C;
+  margin: 20px 0;
+}
+
+.main .left_main .sign_up {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.main .left_main a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #233569;
+  border-radius: 7px;
+  font-size: 10px;
+  text-decoration: none;
+  border: 0;
+  padding: 6px;
+  width: 40%;
+  margin-right: 20px;
+  background-color: #233569;
+  color: white;
+}
+
+.main .left_main a img {
+  width: 15px;
+  margin-right: 2px;
+}
+
+.main .right_main {
+  width: 55%;
+  height: 100%;
+}
+
+.main .right_main img {
+  width: 100%;
 }
 
